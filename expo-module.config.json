@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android", "web"],
+  "apple": {
+    "modules": ["AwsKmsExpoModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.awskmsexpo.AwsKmsExpoModule"]
+  }
+}

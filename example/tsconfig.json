@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "aws-kms-expo": ["../src/index"],
+      "aws-kms-expo/*": ["../src/*"]
+    }
+  }
+}
