@@ -1,6 +1,6 @@
 {
-  "name": "aws-kms-expo",
-  "version": "0.1.0",
+  "name": "@boostbrothers/aws-kms-expo",
+  "version": "1.0.0",
   "description": "using aws kms",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -21,18 +21,20 @@
     "aws-kms-expo",
     "AwsKmsExpo"
   ],
-  "repository": "https://github.com/ko-devHong/aws-kms-expo",
+  "repository": "https://github.com/boostbrothers/aws-kms-expo",
   "bugs": {
-    "url": "https://github.com/ko-devHong/aws-kms-expo/issues"
+    "url": "https://github.com/boostbrothers/aws-kms-expo/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "author": "ko-devHong <dea972@naver.com> (https://github.com/ko-devHong)",
   "license": "MIT",
-  "homepage": "https://github.com/ko-devHong/aws-kms-expo#readme",
-  "dependencies": {},
+  "homepage": "https://github.com/boostbrothers/aws-kms-expo#readme",
   "devDependencies": {
     "@types/react": "~19.0.0",
-    "expo-module-scripts": "^4.1.6",
     "expo": "~53.0.0",
+    "expo-module-scripts": "^4.1.6",
     "react-native": "0.79.1"
   },
   "peerDependencies": {
@@ -40,5 +42,5 @@
     "react": "*",
     "react-native": "*"
   },
-  "packageManager": "pnpm@10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977"
+  "packageManager": "yarn@4.9.2"
 }
