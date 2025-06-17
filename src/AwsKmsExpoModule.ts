@@ -1,12 +1,17 @@
-import { NativeModule, requireNativeModule } from 'expo';
+import { NativeModule, requireNativeModule } from "expo";
 
-import { AwsKmsExpoModuleEvents } from './AwsKmsExpo.types';
-
-declare class AwsKmsExpoModule extends NativeModule<AwsKmsExpoModuleEvents> {
-  PI: number;
-  hello(): string;
-  setValueAsync(value: string): Promise<void>;
+export interface KMSConfig {
+  accessKey: string;
+  secretKey: string;
+  sessionToken: string;
+  keyId: string;
+  endpoint?: string;
 }
 
-// This call loads the native module object from the JSI.
-export default requireNativeModule<AwsKmsExpoModule>('AwsKmsExpo');
+declare class AwsKmsExpoModule extends NativeModule {
+  init(options: KMSConfig): Promise<string>;
+  encrypt(plaintext: string): Promise<string>;
+  decrypt(encryptedText: string): Promise<string>;
+}
+
+export default requireNativeModule<AwsKmsExpoModule>("AwsKmsExpo");

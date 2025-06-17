@@ -19,6 +19,9 @@ Pod::Spec.new do |s|
   s.static_framework = true
 
   s.dependency 'ExpoModulesCore'
+  s.dependency 'AWSKMS', '2.41.0'
+  s.dependency 'CryptoSwift', '~> 1.8.0'
+  s.dependency 'AWSCore', '2.41.0'
 
   # Swift/Objective-C compatibility
   s.pod_target_xcconfig = {

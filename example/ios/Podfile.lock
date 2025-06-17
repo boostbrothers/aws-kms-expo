@@ -1,7 +1,14 @@
 PODS:
+  - AWSCore (2.41.0)
+  - AWSKMS (2.41.0):
+    - AWSCore (= 2.41.0)
   - AwsKmsExpo (0.1.0):
+    - AWSCore (= 2.41.0)
+    - AWSKMS (= 2.41.0)
+    - CryptoSwift (~> 1.8.0)
     - ExpoModulesCore
   - boost (1.84.0)
+  - CryptoSwift (1.8.4)
   - DoubleConversion (1.1.6)
   - EXConstants (17.1.6):
     - ExpoModulesCore
@@ -1805,6 +1812,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AWSCore
+    - AWSKMS
+    - CryptoSwift
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -1967,8 +1977,11 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  AwsKmsExpo: 32c73561e1397e06e2883bf2d0158daffc7d3300
+  AWSCore: ee7594bda3132cde8666328bf9a09d8770c1c100
+  AWSKMS: 9b67afa2465c1d2d7411f36194a2b2032b72cd45
+  AwsKmsExpo: 524836df84fee5550e84eadb1c19b6dd168009c4
   boost: 7e761d76ca2ce687f7cc98e698152abd03a18f90
+  CryptoSwift: e64e11850ede528a02a0f3e768cec8e9d92ecb90
   DoubleConversion: cb417026b2400c8f53ae97020b2be961b59470cb
   EXConstants: 9f310f44bfedba09087042756802040e464323c0
   Expo: 4e8bda07d30b024b1732f87843a5349a3ecc1316
